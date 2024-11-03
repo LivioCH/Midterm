@@ -5,12 +5,13 @@
 }
 
 body {
-    background-color: #fdecef;
+    background-image: url(image/background2.jfif);
+    background-size: cover;
     margin-top: 0px;
 }
 
 h1{
-    background-color: #e5cad4;
+    background-color: lightgray;
     text-align: center;
     margin: 0px;
     padding: 20px;
@@ -22,17 +23,37 @@ h2{
     size: 10px;
 }
 
+.change h2{
+    color: white;
+}
+
+h3{
+    text-align: center;
+    size: 20px;
+    font-family: "Noto Serif TC", serif;
+    margin:20px 10px;
+}
+
+h4{
+    text-align: center;
+    size: 20px;
+    font-family: "Noto Serif TC", serif;
+}
+
 p{
     font-family: "Noto Serif TC", serif;
     text-align: center;
 }
-h3{
-    text-align: center;
-    size: 10px;
+
+.adjust{
+    position: relative;
+    top: 100px;
+    right: 20px;
+    clear:left;
 }
 
 nav{
-    background-color: #e5cad4;
+    background-color: gainsboro;
     height: 8px;
     font-size: 25px;
     display:flex;
@@ -45,34 +66,31 @@ nav{
 nav a{
     position: relative;
     text-decoration: none;
+    color: gray;
     font-family: Arial, Helvetica, sans-serif;
     padding: 14px 20px;
     letter-spacing: 0.5px;
 }
 
-nav a:hover{
-    background-color: #cda8a8;
-    color: white;
-    text-decoration: none;
-}
-/*nav a:after{
+nav a:after{
     content: "";
     position: absolute;
-    background-color: red;
+    background-color: white;
     height: 3px;
     width: 0;
     left: 0;
-    bottom: -10px;
-    transition: 0.3s;
+    bottom: 0px;
+    transition: 0.5s;
 }
 a:hover{
     color: white;
 }
 a:hover:after{
     width: 100%;
-}*/
+}
+
 footer{
-    background-color: #cda8a8;
+    background-color: gainsboro;
     color: #444444;
     text-align: center;
     padding: 10px;
@@ -87,23 +105,33 @@ main{
     top: 20px;
     /*background-color: white;*/
     padding: 20px;
-    margin: 20px 10px;
     border-radius: 15px;
-    background-image: url(image/card_img.jpg);
+    margin-bottom: 20px;
+    background-image: url(image/hetagram.jpg);
     background-size: cover;
 }
+
 .card1{
+    position: relative;
+    top: 20px;
     /*background-color: white;*/
-    padding: 20px;
-    margin: 20px 10px;
+    padding: 150px;
     border-radius: 15px;
-    background-color: yellow;
+    background-image: url(image/hetagram.jpg);
     background-size: cover;
+}
+
+aside {
+    margin: 20px 10px;
+}
+
+section{
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .left{
     float: left;
-    
 }
 
 .right{
@@ -111,16 +139,113 @@ main{
 }
 
 .div1{
+    margin-top:20px ;
     float: left;
     width: 70%;
     text-align: center;
 }
 
-.img1{
-    position:static;
-    top: 40px;
-    left: 50px;
+.div1 img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }
+
+
+.div1 h3{
+    margin:20px 10px;
+}
+
+.div2{
+    float: left;
+    width: 70%;
+}
+
+.floating-box {
+    display: inline-block;
+    padding: 0px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    top: 28px;
+    left: 70px;
+}
+
+.floating-box h3{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left:50px
+}
+
+.floating-box table {
+    margin: 20px 10x; /* Centers table horizontally */
+    width: auto; /* Ensures table size is only as wide as content */
+}
+
+.img1{
+    position: relative;
+    top:10px;
+    right: 20px;
+}
+
+.img2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.img3{
+    border-radius: 10%;
+    position: relative;
+    top:90px;
+    left: 20px;
+}
+
+.img1, .img3 {
+    height: auto;
+    max-width: 100%;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.img1 img, .img3 img {
+    width: 100%; /* Ensure images scale within container */
+    height: auto;
+    border-radius: 10%; /* To match the container’s style */
+}
+
+div h4{
+    position: relative;
+    bottom: 130px;
+    right: 15%;
+}
+
+.bar {
+    position: relative;
+    margin-top:2px;
+    bottom: 150px;
+    left: 380px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    width: 60%;
+    height: 20px;
+    overflow: hidden;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+
 
 article{
     float: left;
@@ -139,6 +264,159 @@ main:after{
     content:"";
     clear: both;
     display: block;
+}
+
+/* experience button */
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+.card button:hover {
+    background-color: gainsboro;
+}
+
+.experience-content {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+  
+.backToTop:hover {
+    background-color: #555;
+}
+
+/* progress bar */
+
+.skill {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 70px; /* Adjusts spacing between images */
+    margin: 20px 0px; /* Adds some vertical spacing */
+}
+
+.skill img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the container perfectly */
+}
+
+.outer {
+    position: relative;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.number{
+    display: flex;
+    position: absolute;
+    top: 180px;
+    right: auto;
+    left: 10px;
+    text-align: center;
+    color: black;
+}
+
+.number h3{
+    margin-left: 105px;
+    margin-right: 105px;
+}
+.outer img {
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px 0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    width: 140px; /* Matches the SVG’s visible area */
+    height: 140px;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+}
+
+circle {
+    fill: none;
+    stroke: gray;
+    stroke-width: 30px;
+}
+
+.outer svg circle {
+    transform: rotate(-90deg); 
+    transform-origin: 90px 90px;
+    fill: none; 
+}
+
+.outer .dash{
+    stroke-dasharray: 490;
+    stroke-dashoffset: 490;
+    animation:anim1 2s linear forwards;
+}
+
+/* animation */
+
+@keyframes anim1{
+    100%{
+        stroke-dashoffset: 245;
+    }
+}
+
+@keyframes anim2{
+    100%{
+        stroke-dashoffset: 168;
+    }
+}
+
+@keyframes anim3{
+    100%{
+        stroke-dashoffset: 168;
+    }
+}
+
+@keyframes anim4{
+    100%{
+        stroke-dashoffset: 168;
+    }
 }
 
 @media screen and(max-width: 800px) {
