@@ -6,66 +6,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>個人網頁排版</title>
     <link rel="stylesheet" href="website.css">
+    <style>
+      .content { display: none; } /* Menyembunyikan semua bagian awalnya */
+      .active { display: block; } /* Hanya bagian aktif yang ditampilkan */
+    </style>
   </head>
   <body>
     <header>   
       <h1>Livio's Resume</h1>
       <nav>
-        <b><a href="#">ABOUT</a></b>
-        <b><a href="#">SKILLS</a></b>
-        <b><a href="#">HOBBIES</a></b>
-        <b><a href="#">EXPERIENCE</a></b>
+        <b><a href="#" onclick="scrollToSection('about')">ABOUT</a></b>
+        <b><a href="#" onclick="scrollToSection('skills')">SKILLS</a></b>
+        <b><a href="#" onclick="scrollToSection('interests')">INTERESTS</a></b>
+        <b><a href="#" onclick="scrollToSection('experience')">EXPERIENCE</a></b>
       </nav>
     </header>
-    
     <main>
-      <h2>About myself</h2>
-      <div class="div1">
-        <img class="img1" src="https://picsum.photos/200/200?random" style="height: 250px;width: 250px; border-radius: 50%"/>
-        <h3>Motto</h3>
-      </div>
-      <aside class="card">
-        <p>李星漢</p><h3>Livio Clayhans</h3>
-        <h3>資管二甲</h3>
-        <p>Indonesia</h3>
-      </aside>
+      <section id="about">
+        <u>
+          <h2>ABOUT MYSELF</h2>
+        </u>
+          <div class="div1">
+            <img src="https://picsum.photos/200/200?random"/>
+            <h3>Motto</h3>
+          </div>
+        <aside class="card">
+          <p>李星漢</p><h3>Livio Clayhans</h3>
+          <h3>資管二甲</h3>
+          <p>Indonesia</h3>
+        </aside>
+      </section>
 
       <article>
-        <h2>Skill Set</h2>
-        <section>
-
-        </section>
-        <h2>Hobby</h2>
-        <section class="card">
-          <img class="left" src="https://picsum.photos/300/200?random=1" style="height: 250px;width: 250px;"/>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            corporis adipisci rem, recusandae maiores repellendus tempore
-            laboriosam suscipit illum ad molestias quasi quae impedit, dicta
-            dolores fuga commodi reprehenderit error? Sunt in culpa qui officia
-            deserunt mollit anim id est laborum consectetur adipiscing elit, sed
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-        </section>
-        <h2>Experience</h2>
-        <section class="card">
-          <img src="https://picsum.photos/300/200?random=2" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            corporis adipisci rem, recusandae maiores repellendus tempore
-            laboriosam suscipit illum ad molestias quasi quae impedit, dicta
-            dolores fuga commodi reprehenderit error? Sunt in culpa qui officia
-            deserunt mollit anim id est laborum consectetur adipiscing elit, sed
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-        </section>
+        <div id="skills">
+          <u>
+            <h2>SKILL SETS</h2>
+          </u>
+          <section class="card">
+              <h2 align="center">Programing</h2>
+              <div class="skill">
+                <div class="number">
+                    <h3>70%</h3>
+                    <h3>80%</h3>
+                    <h3>30%</h3>
+                    <h3>40%</h3>
+                </div>
+                
+                <div class="outer">
+                  <div class="dash">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                      <circle cx="90" cy="90" r="75" stroke="gray" stroke-linecap="round"/>
+                    </svg>
+                    <img src="https://picsum.photos/200/200?random"/>
+                  </div>
+                </div>
+                <div class="outer">
+                  <div class="dash1">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                      <circle cx="90" cy="90" r="75" stroke="gray" stroke-linecap="round"/>
+                    </svg>
+                    <img src="https://picsum.photos/200/200?random"/>
+                  </div>
+                </div>
+                <div class="outer">
+                  <div class="dash2">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                      <circle cx="90" cy="90" r="75" stroke="gray" stroke-linecap="round"/>
+                    </svg>
+                    <img src="https://picsum.photos/200/200?random"/>
+                  </div>
+                </div>
+                <div class="outer">
+                  <div class="dash3">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                      <circle cx="90" cy="90" r="75" stroke="gray" stroke-linecap="round"/>
+                    </svg>
+                    <img src="https://picsum.photos/200/200?random"/>
+                  </div>
+                </div>
+              </div>
+              <h2 align="center">Other Skill</h2>
+              <div>
+                <div class="floating-box">
+                  <h3>Chinese</h3>
+                  <h3>English</h3>
+                  <h3>Video Editing</h3>
+                  <h3>Word Processing</h3>
+                </div>
+              </div>
+              <div>
+                  <h4>80%</h4>
+                  <div class="bar"><span style="width: 80%;"></span></div>
+                  <h4>60%</h4>
+                  <div class="bar"><span style="width: 60%;"></span></div>
+                  <h4>90%</h4>
+                  <div class="bar"><span style="width: 90%;"></span></div>
+                  <h4>75%</h4>
+                  <div class="bar"><span style="width: 75%;"></span></div>
+            </div>
+          </section>
+        </div>
+        <div id="interests">
+          <u>
+            <h2>INTERESTS</h2>
+          </u>
+          <section class="card1">
+              <div class="left">
+                <div class="img1">
+                  <img src="https://picsum.photos/300/200?random=1" style="height: 250px;width: 300px;"/>
+                </div>
+              </div>
+              <h2>Playing Games</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                corporis adipisci rem, recusandae maiores repellendus tempore
+                laboriosam suscipit illum ad molestias quasi quae impedit, dicta
+                dolores fuga commodi reprehenderit error? Sunt in culpa qui officia
+                deserunt mollit anim id est laborum consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco.
+              </p>
+              <div class="right">
+                <div class="img3">
+                  <img src="https://picsum.photos/300/200?random=1" style="height: 250px;width: 300px;"/>
+                </div>
+              </div>
+              <div class="adjust">
+                <h2>Listening to Music</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                  corporis adipisci rem, recusandae maiores repellendus tempore
+                  laboriosam suscipit illum ad molestias quasi quae impedit, dicta
+                  dolores fuga commodi reprehenderit error? Sunt in culpa qui officia
+                  deserunt mollit anim id est laborum consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div id="experience" >
+          <div class="change">
+            <u>
+              <h2>EXPERIENCES</h2>
+            </u>
+          </div>
+          <section class="card">
+            <div class="buttons">
+              <button onclick="showExperience(1)">Experience 1</button>
+              <button onsclick="showExperience(2)">Experience 2</button>
+              <button onclick="showExperience(3)">Experience 3</button>
+            </div>
+            <div id="experience-content">
+              <img id="experience-image" src="https://picsum.photos/300/200?random=1" style="height: 250px;width: 300px;"/>
+              <p id="experience-text">
+                Ini adalah konten Experience 1: Deskripsi pengalaman pertama yang mencakup keterampilan dan pencapaian Anda.
+              </p>
+            </div>
+          </section>
+        </div>
       </article>
     </main>
-
+    <button id="backToTop" class="backToTop" onclick="scrollToTop()" style="display: none;">Back to Top</button>
     <footer>
       <h5>Copyrgiht @ 2022 All rights reserved</h5>
     </footer>
+    
+    <script>
+      function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+
+      function showExperience(experienceNumber) {
+        const experienceText = document.getElementById("experience-text");
+        const experienceImage = document.getElementById("experience-image");
+
+        if (experienceNumber === 1) {
+          experienceText.innerHTML = "Ini adalah konten Experience 1: Deskripsi pengalaman pertama yang mencakup keterampilan dan pencapaian Anda.";
+          experienceImage.src = "https://picsum.photos/300/200?random=1";
+        } else if (experienceNumber === 2) {
+          experienceText.innerHTML = "Ini adalah konten Experience 2: Deskripsi pengalaman kedua, termasuk proyek dan tantangan yang dihadapi.";
+          experienceImage.src= "https://picsum.photos/300/200?random=2"
+        } else if (experienceNumber === 3) {
+          experienceText.innerHTML = "Ini adalah konten Experience 3: Deskripsi pengalaman ketiga yang menggambarkan kontribusi dan pencapaian signifikan.";
+          experienceImage.src = "https://picsum.photos/300/200?random=3"
+        }
+      }
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      window.onscroll = function () {
+        const backToTopButton = document.getElementById("backToTop");
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 20) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      };
+      
+    </script>
   </body>
 </html>
