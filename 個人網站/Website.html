@@ -12,13 +12,13 @@
     </style>
   </head>
   <body>
+    <h1>Livio's Resume</h1>
     <header>   
-      <h1>Livio's Resume</h1>
-      <nav>
-        <b><a href="#" onclick="scrollToSection('about')">ABOUT</a></b>
-        <b><a href="#" onclick="scrollToSection('skills')">SKILLS</a></b>
-        <b><a href="#" onclick="scrollToSection('interests')">INTERESTS</a></b>
-        <b><a href="#" onclick="scrollToSection('experience')">EXPERIENCE</a></b>
+      <nav class="sticky">
+        <b><a href="#about myself" onclick="scrollToSection('about')">ABOUT</a></b>
+        <b><a href="#skill sets" onclick="scrollToSection('skills')">SKILLS</a></b>
+        <b><a href="#interest" onclick="scrollToSection('interests')">INTERESTS</a></b>
+        <b><a href="#experiences" onclick="scrollToSection('experience')">EXPERIENCE</a></b>
       </nav>
     </header>
     <main>
@@ -28,7 +28,7 @@
         </u>
           <div class="div1">
             <img src="https://picsum.photos/200/200?random"/>
-            <h3>Motto</h3>
+            <h3><i>"At Least, I Already Do My Best"</i></h3>
           </div>
         <aside class="card">
           <p>李星漢</p><h3>Livio Clayhans</h3>
@@ -46,10 +46,10 @@
               <h2 align="center">Programing</h2>
               <div class="skill">
                 <div class="number">
-                    <h3>70%</h3>
+                    <h3>75%</h3>
                     <h3>80%</h3>
-                    <h3>30%</h3>
-                    <h3>40%</h3>
+                    <h3>70%</h3>
+                    <h3>65%</h3>
                 </div>
                 
                 <div class="outer">
@@ -61,7 +61,7 @@
                   </div>
                 </div>
                 <div class="outer">
-                  <div class="dash1">
+                  <div class="dash">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                       <circle cx="90" cy="90" r="75" stroke="gray" stroke-linecap="round"/>
                     </svg>
@@ -69,7 +69,7 @@
                   </div>
                 </div>
                 <div class="outer">
-                  <div class="dash2">
+                  <div class="dash">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                       <circle cx="90" cy="90" r="75" stroke="gray" stroke-linecap="round"/>
                     </svg>
@@ -77,7 +77,7 @@
                   </div>
                 </div>
                 <div class="outer">
-                  <div class="dash3">
+                  <div class="dash">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                       <circle cx="90" cy="90" r="75" stroke="gray" stroke-linecap="round"/>
                     </svg>
@@ -95,14 +95,14 @@
                 </div>
               </div>
               <div>
-                  <h4>80%</h4>
-                  <div class="bar"><span style="width: 80%;"></span></div>
-                  <h4>60%</h4>
-                  <div class="bar"><span style="width: 60%;"></span></div>
-                  <h4>90%</h4>
-                  <div class="bar"><span style="width: 90%;"></span></div>
                   <h4>75%</h4>
-                  <div class="bar"><span style="width: 75%;"></span></div>
+                  <div class="bar" id="bar1"><span data-width="75"></span></div>
+                  <h4>85%</h4>
+                  <div class="bar" id="bar2"><span data-width="85"></span></div>
+                  <h4>90%</h4>
+                  <div class="bar" id="bar3"><span data-width="70"></span></div>
+                  <h4>75%</h4>
+                  <div class="bar" id="bar4"><span data-width="80"></span></div>
             </div>
           </section>
         </div>
@@ -113,7 +113,13 @@
           <section class="card1">
               <div class="left">
                 <div class="img1">
-                  <img src="https://picsum.photos/300/200?random=1" style="height: 250px;width: 300px;"/>
+                    <div class="slides">
+                      <img class="slide" src="https://picsum.photos/300/200?random=1" style="height: 250px;width: 300px;"/>
+                      <img class="slide" src="https://picsum.photos/300/200?random=2" style="height: 250px;width: 300px;"/>
+                      <img class="slide" src="https://picsum.photos/300/200?random=3" style="height: 250px;width: 300px;"/>
+                      <button class="prev" onclick=prevSlide()>&#10094</button>
+                      <button class="next" onclick=nextSlide()>&#10095</button>
+                    </div>
                 </div>
               </div>
               <h2>Playing Games</h2>
@@ -143,7 +149,6 @@
                   enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
               </div>
-            </div>
           </section>
         </div>
         <div id="experience" >
@@ -155,14 +160,22 @@
           <section class="card">
             <div class="buttons">
               <button onclick="showExperience(1)">Experience 1</button>
-              <button onsclick="showExperience(2)">Experience 2</button>
+              <button onclick="showExperience(2)">Experience 2</button>
               <button onclick="showExperience(3)">Experience 3</button>
             </div>
             <div id="experience-content">
+              <div class="adjust1">
               <img id="experience-image" src="https://picsum.photos/300/200?random=1" style="height: 250px;width: 300px;"/>
-              <p id="experience-text">
-                Ini adalah konten Experience 1: Deskripsi pengalaman pertama yang mencakup keterampilan dan pencapaian Anda.
-              </p>
+                <p id="experience-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                  corporis adipisci rem, recusandae maiores repellendus tempore
+                  laboriosam suscipit illum ad molestias quasi quae impedit, dicta
+                  dolores fuga commodi reprehenderit error? Sunt in culpa qui officia
+                  deserunt mollit anim id est laborum consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco.
+                </p>
+              </div>
             </div>
           </section>
         </div>
@@ -174,8 +187,22 @@
     </footer>
     
     <script>
+      window.addEventListener("scroll", function() {
+        const navbar = document.querySelector("nav");
+        const sticky = navbar.offsetTop;
+        if (window.scrollY >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      });
+
       function scrollToSection(sectionId) {
-        document.getElementById(sectionId).scrollIntoView({
+        const section = document.getElementById(sectionId);
+        const offset = -80; // Sesuaikan dengan tinggi navbar sticky
+        const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset + offset;
+        window.scrollTo({
+          top: sectionPosition,
           behavior: 'smooth'
         });
       }
@@ -209,6 +236,67 @@
         }
       };
       
+      // progress bar
+      document.addEventListener("DOMContentLoaded", function () {
+        const bars = document.querySelectorAll(".bar span");
+        const observerOptions = {
+          threshold: 0.5, // Set threshold sesuai kebutuhan (50% dari elemen terlihat)
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const width = entry.target.getAttribute("data-width");
+              entry.target.style.width = `${width}%`;
+            }
+          });
+        }, observerOptions);
+        bars.forEach((bar) => {
+          observer.observe(bar);
+        });
+      })
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const skillCircles = document.querySelectorAll(".outer svg circle");
+        const percentages = document.querySelectorAll(".number h3");
+
+        // Create an Intersection Observer
+        const skillObserverOptions = {
+          threshold: 0.5, // Trigger when 50% of the skill section is visible
+        };
+
+        const skillObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Get the circle and its corresponding percentage
+              const circle = entry.target.querySelector("svg circle");
+              const index = Array.from(document.querySelectorAll(".outer")).indexOf(entry.target);
+              const targetPercentage = parseFloat(percentages[index].textContent) / 100;
+
+              // Set up the circle for the animation
+              const radius = circle.r.baseVal.value;
+              const circumference = 2 * Math.PI * radius;
+
+              circle.style.strokeDasharray = circumference;
+              circle.style.strokeDashoffset = circumference;
+
+              // Animate the circle to show the skill level
+              setTimeout(() => {
+                circle.style.transition = "stroke-dashoffset 2s ease";
+                circle.style.strokeDashoffset = circumference * (1 - targetPercentage);
+              }, 300); // Delay for smoothness
+
+              // Stop observing this entry once it has animated
+              observer.unobserve(entry.target);
+            }
+          });
+        }, skillObserverOptions);
+
+        // Observe each skill's outer container
+        document.querySelectorAll(".outer").forEach((skill) => {
+          skillObserver.observe(skill);
+        });
+      });
+
     </script>
   </body>
 </html>
