@@ -10,10 +10,12 @@ body {
     margin-top: 0px;
 }
 
+
+
 h1{
     background-color: lightgray;
     text-align: center;
-    margin: 0px;
+    margin-top: 50px;
     padding: 20px;
 }
 
@@ -51,6 +53,13 @@ p{
     right: 20px;
     clear:left;
 }
+
+.adjust1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 
 nav{
     background-color: gainsboro;
@@ -226,6 +235,17 @@ div h4{
     right: 15%;
 }
 
+/* Sticky Navigation */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+/* bar */
+
 .bar {
     position: relative;
     margin-top:2px;
@@ -242,10 +262,10 @@ div h4{
     display: block;
     height: 100%;
     background-color: gray;
-    border-radius: 10px;
+    border-radius: 5px;
+    width: 0;
+    transition: width 2s ease-in-out;
 }
-
-
 
 article{
     float: left;
@@ -266,7 +286,7 @@ main:after{
     display: block;
 }
 
-/* experience button */
+/* experience & button */
 
 .buttons{
     display: flex;
@@ -314,21 +334,21 @@ main:after{
     background-color: #555;
 }
 
-/* progress bar */
+/* progress circle & animation*/
 
 .skill {
     position: relative;
     display: flex;
     justify-content: center;
-    gap: 70px; /* Adjusts spacing between images */
-    margin: 20px 0px; /* Adds some vertical spacing */
+    gap: 70px; 
+    margin: 20px 0px;
 }
 
 .skill img {
     height: 140px;
     width: 140px;
     border-radius: 50%;
-    object-fit: cover; /* Ensures the image covers the container perfectly */
+    object-fit: cover; 
 }
 
 .outer {
@@ -381,6 +401,7 @@ circle {
     stroke-width: 30px;
 }
 
+  
 .outer svg circle {
     transform: rotate(-90deg); 
     transform-origin: 90px 90px;
@@ -390,33 +411,16 @@ circle {
 .outer .dash{
     stroke-dasharray: 490;
     stroke-dashoffset: 490;
-    animation:anim1 2s linear forwards;
 }
+
+/* Slider  */
+
+
 
 /* animation */
-
-@keyframes anim1{
-    100%{
-        stroke-dashoffset: 245;
-    }
-}
-
-@keyframes anim2{
-    100%{
-        stroke-dashoffset: 168;
-    }
-}
-
-@keyframes anim3{
-    100%{
-        stroke-dashoffset: 168;
-    }
-}
-
-@keyframes anim4{
-    100%{
-        stroke-dashoffset: 168;
-    }
+@keyframes fill {
+    from { width: 0;}
+    to { width: 100%;}
 }
 
 @media screen and(max-width: 800px) {
