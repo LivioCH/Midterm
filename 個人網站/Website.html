@@ -7,8 +7,8 @@
     <title>個人網頁排版</title>
     <link rel="stylesheet" href="website.css">
     <style>
-      .content { display: none; } /* Menyembunyikan semua bagian awalnya */
-      .active { display: block; } /* Hanya bagian aktif yang ditampilkan */
+      .content { display: none; }
+      .active { display: block; }
     </style>
   </head>
   <body>
@@ -27,7 +27,7 @@
           <h2>ABOUT MYSELF</h2>
         </u>
           <div class="div1">
-            <img src="https://picsum.photos/200/200?random"/>
+            <img src="image/my-profile.jpg"/>
             <h3><i>"At Least, I Already Do My Best"</i></h3>
           </div>
         <aside class="card">
@@ -35,6 +35,11 @@
           <h3>資管二甲</h3>
           <p>Indonesia</h3>
         </aside>
+        <div class="logo">
+          <a href="https://www.facebook.com/share/19FMHXobvB/"><img src="image/FB.png" alt=""></a>
+          <a href="https://www.instagram.com/livioclayhans/profilecard/?igsh=cmtrMjN6ZTZscmxp"><img src="image/IG.png" alt=""></a>
+          <a href="mailto:livio.clayhans@gmail.com"><img src="image/Gmail.png" alt=""></a>
+        </div>
       </section>
 
       <article>
@@ -46,8 +51,8 @@
               <h2 align="center">Programing</h2>
               <div class="skill">
                 <div class="number">
-                    <h3>75%</h3>
-                    <h3>80%</h3>
+                    <h3>60%</h3>
+                    <h3>85%</h3>
                     <h3>70%</h3>
                     <h3>65%</h3>
                 </div>
@@ -55,33 +60,33 @@
                 <div class="outer">
                   <div class="dash">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                      <circle cx="90" cy="90" r="75" stroke="gray" stroke-linecap="round"/>
+                      <circle cx="90" cy="90" r="80" stroke="gray" stroke-linecap="round"/>
                     </svg>
-                    <img src="https://picsum.photos/200/200?random"/>
+                    <img src="image/Py.png"/>
                   </div>
                 </div>
                 <div class="outer">
                   <div class="dash">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                      <circle cx="90" cy="90" r="75" stroke="gray" stroke-linecap="round"/>
+                      <circle cx="90" cy="90" r="80" stroke="gray" stroke-linecap="round"/>
                     </svg>
-                    <img src="https://picsum.photos/200/200?random"/>
+                    <img src="image/Java.png"/>
                   </div>
                 </div>
                 <div class="outer">
                   <div class="dash">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                      <circle cx="90" cy="90" r="75" stroke="gray" stroke-linecap="round"/>
+                      <circle cx="90" cy="90" r="80" stroke="gray" stroke-linecap="round"/>
                     </svg>
-                    <img src="https://picsum.photos/200/200?random"/>
+                    <img src="image/HTML.png"/>
                   </div>
                 </div>
                 <div class="outer">
                   <div class="dash">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                      <circle cx="90" cy="90" r="75" stroke="gray" stroke-linecap="round"/>
+                      <circle cx="90" cy="90" r="80" stroke="gray" stroke-linecap="round"/>
                     </svg>
-                    <img src="https://picsum.photos/200/200?random"/>
+                    <img src="image/CSS.png"/>
                   </div>
                 </div>
               </div>
@@ -113,40 +118,46 @@
           <section class="card1">
               <div class="left">
                 <div class="img1">
-                    <div class="slides">
-                      <img class="slide" src="https://picsum.photos/300/200?random=1" style="height: 250px;width: 300px;"/>
-                      <img class="slide" src="https://picsum.photos/300/200?random=2" style="height: 250px;width: 300px;"/>
-                      <img class="slide" src="https://picsum.photos/300/200?random=3" style="height: 250px;width: 300px;"/>
-                      <button class="prev" onclick=prevSlide()>&#10094</button>
-                      <button class="next" onclick=nextSlide()>&#10095</button>
+                    <div class="slider">
+                      <div class="slides">
+                        <img class="slide" src="image/Minecraft.jfif" style="height: 250px;width: 300px;"/>
+                        <img class="slide" src="image/ML.jpg" style="height: 250px;width: 300px;"/>
+                        <img class="slide" src="image/GI.jfif" style="height: 250px;width: 300px;"/>
+                        <button class="prev" onclick=prevSlide(0)>&#10094</button>
+                        <button class="next" onclick=nextSlide(0)>&#10095</button>
+                      </div>
                     </div>
                 </div>
               </div>
               <h2>Playing Games</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                corporis adipisci rem, recusandae maiores repellendus tempore
-                laboriosam suscipit illum ad molestias quasi quae impedit, dicta
-                dolores fuga commodi reprehenderit error? Sunt in culpa qui officia
-                deserunt mollit anim id est laborum consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco.
+                I’ve always enjoyed gaming, starting with Minecraft when I was young, where I’d spend hours building and exploring with friends.
+                By seventh grade, I got into Mobile Legends(A MOBA Game), a popular game in Indonesia, which became a favorite I still play with friends today.
+                During the COVID pandemic, I discovered Genshin Impact, an RPG with a rich world that was a refreshing change. 
+                Playing these three games has become a way to connect with friends and immerse myself in different worlds, though sometimes I enjoy taking breaks, especially from the more intense games like Mobile Legends.
               </p>
               <div class="right">
                 <div class="img3">
-                  <img src="https://picsum.photos/300/200?random=1" style="height: 250px;width: 300px;"/>
+                  <div class="slider">
+                    <div class="slides">
+                      <img class="slide" src="image/tulus.jfif" style="height: 250px;width: 300px;"/>
+                      <img class="slide" src="image/day6.jpg" style="height: 250px;width: 300px;"/>
+                      <img class="slide" src="image/eric.jpg" style="height: 250px;width: 300px;"/>
+                      <img class="slide" src="image/lady.png" style="height: 250px;width: 300px;"/>
+                      <button class="prev" onclick=prevSlide(1)>&#10094</button>
+                      <button class="next" onclick=nextSlide(1)>&#10095</button>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="adjust">
                 <h2>Listening to Music</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                  corporis adipisci rem, recusandae maiores repellendus tempore
-                  laboriosam suscipit illum ad molestias quasi quae impedit, dicta
-                  dolores fuga commodi reprehenderit error? Sunt in culpa qui officia
-                  deserunt mollit anim id est laborum consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                  enim ad minim veniam, quis nostrud exercitation ullamco.
+                  I really like hearing different type of music,i’m drawn to artists from different places each bringing something unique to my playlist. 
+                  TULUS, an Indonesian solo artist, has a way of connecting deeply with emotions, his songs often moving me.
+                  Then there’s DAY6, a Korean band that deserves more recognition,they create incredible music that’s still relatively underrated. 
+                  ERIC CHOU, a popular Taiwanese singer, sings with such emotion that when I translate the lyrics, the impact of his music becomes even stronger. 
+                  Lastly, LADY GAGA, an American icon, her powerful voice never fails to energize me.
                 </p>
               </div>
           </section>
@@ -164,17 +175,16 @@
               <button onclick="showExperience(3)">Experience 3</button>
             </div>
             <div id="experience-content">
+              <h2 id="experience-title">VOLUNTEERING</h2>
               <div class="adjust1">
-              <img id="experience-image" src="https://picsum.photos/300/200?random=1" style="height: 250px;width: 300px;"/>
+              <img id="experience-image" src="image/Volen.png" style="height: 250px;width: 300px;"/>
                 <p id="experience-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                  corporis adipisci rem, recusandae maiores repellendus tempore
-                  laboriosam suscipit illum ad molestias quasi quae impedit, dicta
-                  dolores fuga commodi reprehenderit error? Sunt in culpa qui officia
-                  deserunt mollit anim id est laborum consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                  enim ad minim veniam, quis nostrud exercitation ullamco.
+                  In my second semester at Chong Yuan University, I took a class called Management (管理學), which required us to participate in a volunteer activity.
+                  My friend and I decided to volunteer by picking up trash around the beach that was far away from school. It was a big advanture and tiring, but we had a lot of fun working together and helping the beach environment.
                 </p>
+              </div>
+              <div class="big">
+                <img id="big-image" src="image/Big-photo.jpg" style="height: 250px;width: 500px;" /> 
               </div>
             </div>
           </section>
@@ -199,7 +209,7 @@
 
       function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
-        const offset = -80; // Sesuaikan dengan tinggi navbar sticky
+        const offset = -80; 
         const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset + offset;
         window.scrollTo({
           top: sectionPosition,
@@ -208,20 +218,29 @@
       }
 
       function showExperience(experienceNumber) {
+        const experienceTitle = document.getElementById("experience-title");
         const experienceText = document.getElementById("experience-text");
         const experienceImage = document.getElementById("experience-image");
+        const experienceBig = document.getElementById("big-image");
 
         if (experienceNumber === 1) {
-          experienceText.innerHTML = "Ini adalah konten Experience 1: Deskripsi pengalaman pertama yang mencakup keterampilan dan pencapaian Anda.";
-          experienceImage.src = "https://picsum.photos/300/200?random=1";
+          experienceTitle.innerHTML = "VOLUNTEERING"
+          experienceText.innerHTML = "In my second semester at Chong Yuan University, I took a class called Management (管理學), which required us to participate in a volunteer activity. My friend and I decided to volunteer by picking up trash around the beach that was far away from school. It was a big advanture and tiring, but we had a lot of fun working together and helping the beach environment.";
+          experienceImage.src = "image/Volen.png";
+          experienceBig.src = "image/Big-photo.jpg";
         } else if (experienceNumber === 2) {
-          experienceText.innerHTML = "Ini adalah konten Experience 2: Deskripsi pengalaman kedua, termasuk proyek dan tantangan yang dihadapi.";
-          experienceImage.src= "https://picsum.photos/300/200?random=2"
+          experienceTitle.innerHTML = "CADRE"
+          experienceText.innerHTML = "This year, I became a cadre member of the Chong Yuan Overseas Student Association (橋生聯誼會). In this role, I help new overseas students settle into CYCU and assist in organizing events. It’s a challenging position, but I’ve found it both rewarding and enjoyable.";
+          experienceImage.src = "image/ganbu.jpg";
+          experienceBig.src = "image/Big-photo-ganbu.jpg";
         } else if (experienceNumber === 3) {
-          experienceText.innerHTML = "Ini adalah konten Experience 3: Deskripsi pengalaman ketiga yang menggambarkan kontribusi dan pencapaian signifikan.";
-          experienceImage.src = "https://picsum.photos/300/200?random=3"
+          experienceTitle.innerHTML = "PROJECT"
+          experienceText.innerHTML = "When I was in 11th grade, my Python teacher gave us an assignment to create a game. I decided to make a battleship game where players have to guess the location of a hidden ship covered by a '?' block. It was a fun project that challenged my programming skills.";
+          experienceImage.src = "image/Battleship/Battle_ship.png";
+          experienceBig.src = "image/Battleship/simple.jpg";
         }
       }
+
 
       function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -240,7 +259,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         const bars = document.querySelectorAll(".bar span");
         const observerOptions = {
-          threshold: 0.5, // Set threshold sesuai kebutuhan (50% dari elemen terlihat)
+          threshold: 0.5, 
         };
         const observer = new IntersectionObserver((entries, observer) => {
           entries.forEach((entry) => {
@@ -259,43 +278,81 @@
         const skillCircles = document.querySelectorAll(".outer svg circle");
         const percentages = document.querySelectorAll(".number h3");
 
-        // Create an Intersection Observer
+
         const skillObserverOptions = {
-          threshold: 0.5, // Trigger when 50% of the skill section is visible
+          threshold: 0.5, 
         };
 
         const skillObserver = new IntersectionObserver((entries, observer) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              // Get the circle and its corresponding percentage
               const circle = entry.target.querySelector("svg circle");
               const index = Array.from(document.querySelectorAll(".outer")).indexOf(entry.target);
               const targetPercentage = parseFloat(percentages[index].textContent) / 100;
 
-              // Set up the circle for the animation
               const radius = circle.r.baseVal.value;
               const circumference = 2 * Math.PI * radius;
 
               circle.style.strokeDasharray = circumference;
               circle.style.strokeDashoffset = circumference;
 
-              // Animate the circle to show the skill level
               setTimeout(() => {
                 circle.style.transition = "stroke-dashoffset 2s ease";
                 circle.style.strokeDashoffset = circumference * (1 - targetPercentage);
-              }, 300); // Delay for smoothness
+              }, 300); 
 
-              // Stop observing this entry once it has animated
               observer.unobserve(entry.target);
             }
           });
         }, skillObserverOptions);
 
-        // Observe each skill's outer container
         document.querySelectorAll(".outer").forEach((skill) => {
           skillObserver.observe(skill);
         });
       });
+
+      //slider
+      const sliders = document.querySelectorAll(".slides");
+      const slideIndices = Array(sliders.length).fill(0); 
+      const intervalIDs = Array(sliders.length).fill(null);
+
+      document.addEventListener("DOMContentLoaded", initializeSliders);
+
+      function initializeSliders() {
+        sliders.forEach((slider, i) => {
+          const slides = slider.querySelectorAll(".slide");
+          if (slides.length > 0) {
+            slides[0].classList.add("displaySlide");
+            intervalIDs[i] = setInterval(() => nextSlide(i), 5000);
+          }
+        });
+      }
+
+      function showSlide(sliderIndex, index) {
+        const slides = sliders[sliderIndex].querySelectorAll(".slide");
+        if (index >= slides.length) {
+          slideIndices[sliderIndex] = 0;
+        } else if (index < 0) {
+          slideIndices[sliderIndex] = slides.length - 1;
+        } else {
+          slideIndices[sliderIndex] = index;
+        }
+
+        slides.forEach((slide) => slide.classList.remove("displaySlide"));
+        slides[slideIndices[sliderIndex]].classList.add("displaySlide");
+      }
+
+      function prevSlide(sliderIndex) {
+        intervalIDs[sliderIndex] = setInterval(() => nextSlide(sliderIndex), 5000);
+        clearInterval(intervalIDs[sliderIndex]);
+        showSlide(sliderIndex, --slideIndices[sliderIndex]);
+      }
+
+      function nextSlide(sliderIndex) {
+        intervalIDs[sliderIndex] = setInterval(() => nextSlide(sliderIndex), 5000);
+        clearInterval(intervalIDs[sliderIndex]);
+        showSlide(sliderIndex, ++slideIndices[sliderIndex]);
+      }
 
     </script>
   </body>
