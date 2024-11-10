@@ -5,12 +5,10 @@
 }
 
 body {
-    background-image: url(image/background2.jfif);
+    background-image: url(image/background.jfif);
     background-size: cover;
     margin-top: 0px;
 }
-
-
 
 h1{
     background-color: lightgray;
@@ -26,6 +24,10 @@ h2{
 }
 
 .change h2{
+    color: white; 
+}
+
+.change u{
     color: white;
 }
 
@@ -49,7 +51,7 @@ p{
 
 .adjust{
     position: relative;
-    top: 100px;
+    top: 80px;
     right: 20px;
     clear:left;
 }
@@ -57,6 +59,7 @@ p{
 .adjust1{
     display: flex;
     align-items: center;
+    margin: 20px 10px;
     gap: 20px;
 }
 
@@ -91,10 +94,10 @@ nav a:after{
     bottom: 0px;
     transition: 0.5s;
 }
-a:hover{
+nav a:hover{
     color: white;
 }
-a:hover:after{
+nav a:hover:after{
     width: 100%;
 }
 
@@ -112,7 +115,6 @@ main{
 .card{
     position: relative;
     top: 20px;
-    /*background-color: white;*/
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -123,7 +125,6 @@ main{
 .card1{
     position: relative;
     top: 20px;
-    /*background-color: white;*/
     padding: 150px;
     border-radius: 15px;
     background-image: url(image/hetagram.jpg);
@@ -191,8 +192,8 @@ section{
 }
 
 .floating-box table {
-    margin: 20px 10x; /* Centers table horizontally */
-    width: auto; /* Ensures table size is only as wide as content */
+    margin: 20px 10x;
+    width: auto;
 }
 
 .img1{
@@ -216,7 +217,7 @@ section{
     left: 20px;
 }
 
-.img1, .img3 {
+.img1, .img3{
     height: auto;
     max-width: 100%;
     border-radius: 10%;
@@ -224,9 +225,33 @@ section{
 }
 
 .img1 img, .img3 img {
-    width: 100%; /* Ensure images scale within container */
+    width: 100%;
     height: auto;
-    border-radius: 10%; /* To match the container’s style */
+    border-radius: 10%;
+}
+
+.big{
+    display:flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.logo{
+    display: flex;
+    position: relative;
+    top: 10px;
+    right: 160px;
+    gap: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.logo a img{
+    border-radius:10%;
+    width: 50px;
+    height: 50px;
 }
 
 div h4{
@@ -383,7 +408,7 @@ main:after{
                 0.5px 0.5px 0px rgba(0, 0, 0.15),
                 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
     position: absolute;
-    width: 140px; /* Matches the SVG’s visible area */
+    width: 140px;
     height: 140px;
 }
 
@@ -398,7 +423,7 @@ svg {
 circle {
     fill: none;
     stroke: gray;
-    stroke-width: 30px;
+    stroke-width: 20px;
 }
 
   
@@ -414,6 +439,32 @@ circle {
 }
 
 /* Slider  */
+.img1 img, .img3 img{
+   display: none;
+}
+
+.img1 img.displaySlide, .img3 img.displaySlide{
+    display: block;
+    animation: fade;
+    animation-duration: 1.5s;
+}
+
+.slider button{
+    z-index: 10;
+    padding: 5px 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
 
 
 
@@ -421,6 +472,10 @@ circle {
 @keyframes fill {
     from { width: 0;}
     to { width: 100%;}
+}
+@keyframes fade {
+    from{opacity: .5}
+    to {opacity: 1;}
 }
 
 @media screen and(max-width: 800px) {
